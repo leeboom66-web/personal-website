@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">我的网站</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">作品展示</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系方式</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="section home">
+        <div class="home-content">
+            <h1 class="home-title">你好，我是 <span class="highlight">设计师</span></h1>
+            <p class="home-subtitle">专注于平面设计、品牌设计和用户体验设计</p>
+            <div class="home-buttons">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="home-hero">
+            <div class="hero-illustration">
+                <i class="fas fa-palette"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是一名充满热情的设计师，拥有5年的设计经验，擅长品牌视觉设计、平面设计和用户界面设计。我相信好的设计不仅要美观，更要能够解决实际问题，为用户创造价值。</p>
+                    <p>在我的职业生涯中，我有幸与众多知名品牌合作，涵盖科技、零售、文化等多个领域，帮助客户打造具有影响力的品牌形象。</p>
+                    <div class="skills">
+                        <h3>技能专长</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">平面设计</span>
+                            <span class="skill-tag">品牌设计</span>
+                            <span class="skill-tag">UI/UX设计</span>
+                            <span class="skill-tag">插画设计</span>
+                            <span class="skill-tag">包装设计</span>
+                            <span class="skill-tag">3D设计</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">完成项目</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">30+</h3>
+                        <p class="stat-label">合作客户</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">5年</h3>
+                        <p class="stat-label">设计经验</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">作品展示</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">品牌视觉设计</h3>
+                        <p class="project-description">为科技公司设计的完整品牌视觉系统，包括logo、配色、字体和应用规范。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">品牌设计</span>
+                            <span class="project-tag">VI系统</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">包装设计</h3>
+                        <p class="project-description">为食品品牌设计的系列产品包装，提升了产品在货架上的辨识度。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">包装设计</span>
+                            <span class="project-tag">快消品</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">APP界面设计</h3>
+                        <p class="project-description">为健康管理APP设计的用户界面，获得了用户的一致好评。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UI设计</span>
+                            <span class="project-tag">移动应用</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">海报设计</h3>
+                        <p class="project-description">为文化艺术节设计的系列宣传海报，具有强烈的视觉冲击力。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">平面设计</span>
+                            <span class="project-tag">宣传物料</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">网站设计</h3>
+                        <p class="project-description">为设计工作室设计的官方网站，兼具美观性和实用性。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">网页设计</span>
+                            <span class="project-tag">响应式</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">插画设计</h3>
+                        <p class="project-description">为儿童读物创作的系列插画，风格活泼可爱，深受小朋友喜爱。</p>
+                        <div class="project-tags">
+                            <span class="project-tag">插画</span>
+                            <span class="project-tag">出版物</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>让我们一起创造精彩的设计</h3>
+                    <p>如果你有设计需求或者合作意向，欢迎随时联系我，我会尽快回复你。</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>邮箱</h4>
+                                <p>design@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>电话</h4>
+                                <p>+86 138 0000 0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>地址</h4>
+                                <p>北京市朝阳区</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="你的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="你的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="主题" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="留言内容" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 我的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
