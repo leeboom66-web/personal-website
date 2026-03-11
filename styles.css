@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.47059;
+    color: #1d1d1f;
     overflow-x: hidden;
+    background: #f5f5f7;
 }
 
 .container {
@@ -42,8 +43,9 @@ body {
 .nav-logo a {
     font-size: 24px;
     font-weight: 700;
-    color: #2563eb;
+    color: #000;
     text-decoration: none;
+    letter-spacing: -0.5px;
 }
 
 .nav-menu {
@@ -101,6 +103,14 @@ body {
     align-items: center;
 }
 
+.section:nth-child(odd) {
+    background: white;
+}
+
+.section:nth-child(even) {
+    background: #f5f5f7;
+}
+
 .section-title {
     font-size: 48px;
     font-weight: 700;
@@ -118,7 +128,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #2563eb, #8b5cf6);
+    background: linear-gradient(90deg, #0066cc, #00ccff);
     border-radius: 2px;
 }
 
@@ -135,13 +145,15 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    background: #0066cc;
     color: white;
+    border-radius: 980px;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+    background: #0077ed;
 }
 
 .btn-secondary {
@@ -304,25 +316,36 @@ body {
 
 .project-card {
     background: white;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f2f2f7;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     height: 220px;
-    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    background: #f5f5f7;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
-    color: white;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-info {
